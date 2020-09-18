@@ -1,0 +1,12 @@
+{
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "D:/BuildWithAngga/react-native/DoctorApp/.eslintrc.json"
+  },
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.autoImports": true
+}

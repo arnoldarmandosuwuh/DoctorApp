@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "es6": true,
+    "react-native/react-native": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "eslint-config-prettier",
+    "@react-native-community"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-native", "prettier"],
+  "rules": {
+    "array-callback-return": "off",
+    "react/no-this-in-sfc": "off",
+    "react/jsx-key": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "semi": [2, "never"],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["link"],
+        "specialLink": ["to"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "semi": false,
+        "endOfLine": "auto",
+        "tabWidth": 4
+      },
+      {
+        "usePrettierrc": false
+      }
+    ]
+  }
+}
