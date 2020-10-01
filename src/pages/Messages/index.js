@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { ILNullPhoto } from '../../assets'
 import { List } from '../../components'
 import { Fire } from '../../config'
 import { colors, fonts, getData } from '../../utils'
@@ -55,7 +56,11 @@ const Messages = ({ navigation }) => {
                     return (
                         <List
                             key={chat.id}
-                            profile={{ uri: chat.detailDoctor.photo }}
+                            profile={
+                                chat.detailDoctor.photo.length > 1
+                                    ? { uri: chat.detailDoctor.photo }
+                                    : ILNullPhoto
+                            }
                             name={chat.detailDoctor.fullName}
                             desc={chat.lastContentChat}
                             onPress={() =>
