@@ -7,11 +7,11 @@ import ILCatObat from './cat-dok-obat.svg'
 import ILHospitalBG from './hospitals-background.png'
 
 export {
-    ILLogo,
-    ILGetStarted,
-    ILNullPhoto,
-    ILCatUmum,
-    ILCatPsikiater,
-    ILCatObat,
-    ILHospitalBG,
+  ILLogo,
+  ILGetStarted,
+  ILNullPhoto,
+  ILCatUmum,
+  ILCatPsikiater,
+  ILCatObat,
+  ILHospitalBG,
 }
